@@ -31,6 +31,10 @@ public class User {
 	@NotNull(message = "must be not null")
 	private String phoneNumber;
 	
+	@NotNull
+	@Size(min=6)
+	private String password;
+	
 	@OneToMany(mappedBy = "user")
 	@JsonBackReference	
 	private List<Borrowing> borrowings;
