@@ -31,7 +31,7 @@ public class User {
 	@NotNull(message = "must be not null")
 	private String phoneNumber;
 	
-	@NotNull
+	@NotNull(message = "must be not null")
 	@Size(min=6)
 	private String password;
 	
